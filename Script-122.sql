@@ -1,0 +1,6 @@
+SELECT CORPORATE ,"MONTH" , COUNT("TRIP ID")
+FROM global_trips_2023_Q1 gtq 
+WHERE COUNTRY = 'KENYA'
+AND CORPORATE IN ('Safaricom Ltd' , 'Equity Bank (Kenya) Limited' , 'NCBA BANK KENYA PLC' , 'KCB Bank Ltd')
+GROUP BY CORPORATE ,"MONTH"
+UNION ALL 
